@@ -126,6 +126,7 @@
     position: fixed;
     z-index: -10;
     background-size: cover;
+    overflow-x: hidden;
    
    
 }
