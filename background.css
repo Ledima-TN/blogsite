@@ -1,3 +1,5 @@
+
+
 .circles{
     position: absolute;
     top: 0;
@@ -14,7 +16,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--circles-primary);
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -118,7 +120,7 @@
 .area{
     background: var(--bg-primary);  
     background: -webkit-linear-gradient(to left, #26262e, #23232f);  
-    width: 100%;
+    width: 100vw;
     top: 0px;
     bottom: 0px;
     position: fixed;
