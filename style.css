@@ -254,14 +254,30 @@ span:hover {
 }
 
 .fa-arrow-circle-down {
-    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
     text-decoration: none;
     transition: all 100ms ease-in-out;
     color: whitesmoke;
 }
 
 .fa-arrow-circle-down:hover {
-    font-size: 6rem;
+    font-size: 4.5rem;
+    cursor: pointer;
+    color: var(--circles-primary);
+}
+.fa-arrow-circle-up {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+    color: whitesmoke;
+}
+
+.fa-arrow-circle-up:hover {
+    font-size: 4.5rem;
     cursor: pointer;
     color: var(--circles-primary);
 }
