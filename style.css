@@ -37,8 +37,9 @@
     z-index: 5;
     color: var(--text-secondary);
     overflow-x: hidden;
-    overflow-y: visible;
-}
+    
+    text-overflow: clip;
+}   
  
 body {
     color: var(--text-primary);
@@ -195,14 +196,24 @@ main {
 }
 
 .col-2-item p {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+}
+
+.skill-image{
+    height: auto;
+    max-width: 540px;
+    width: 80vw;
 }
 
 .profile-image {
     border-radius: 50%;
     height: auto;
-    width: 20rem;
+    max-width: 488px;
+    max-height: 479px;
+    width: 80vw;
     padding-bottom: 2rem;
     
 }
@@ -217,6 +228,8 @@ main {
 
 img {
     transition: all 200ms ease;
+}
+
 }
 
 .profile-image:hover {
@@ -323,7 +336,13 @@ span:hover {
     main {
         margin: 0;
     }
+
+    :root{
+        font-size: 4vw;
+    }
 }
+
+
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
