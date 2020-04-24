@@ -25,12 +25,13 @@
     --transition-speed: 600ms;
     --innerheight: 100vh;/* variable 100% of viewport height */
     overflow-x: hidden;
+    font-display: initial;
 
 }
 
 .panel{
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     width: 100vw;
     height: auto;
     background: var(--bg-secondary);
@@ -185,8 +186,7 @@ main {
 .col-2 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-   
+    align-items: center; 
 }
 
 .col-2-item {
@@ -204,8 +204,15 @@ main {
 
 .skill-image{
     height: auto;
-    max-width: 540px;
+    max-width: 300px;
     width: 80vw;
+    transition: all 200ms ease;
+    box-shadow: 0 0 0.75rem crimson;
+
+}
+
+.skill-image:hover{
+        filter: blur(1px) saturate(95%) brightness(90%);
 }
 
 .profile-image {
@@ -230,7 +237,7 @@ img {
     transition: all 200ms ease;
 }
 
-}
+
 
 .profile-image:hover {
     transform: scale(1.01);
@@ -240,11 +247,17 @@ img {
     font-size: 70px;
     text-align: center;
     font-family: 'B612', sans-serif;
+    color: var(--text-secondary);
+}
+
+.split-text{
+    color: var(--text-secondary);
 }
 
 .section {
     height: 100vh;
-    
+    margin-left: 5rem;
+    padding: 1rem;
 }
 
 .fullcenter {
@@ -266,13 +279,22 @@ span:hover {
     transform: scale(1.2)
 }
 
-.fa-arrow-circle-down {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+
+
+.fas:hover{
+    font-size: 4.2rem;
+    color: var(--circles-primary);
+
+}
+
+.fa, .fa-glasses, .fa-gamepad, .fa-arrow-circle-down, .fa-home, .fa-vr-cardboard {
     font-size: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-decoration: none;
     transition: all 100ms ease-in-out;
     color: whitesmoke;
+   
 }
 
 .fa-arrow-circle-down:hover {
@@ -303,11 +325,8 @@ span:hover {
     }
 
     .col-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        
+        display: block;
+       
     }
     .main-header{
         margin-left: 0rem;
@@ -340,6 +359,10 @@ span:hover {
     :root{
         font-size: 4vw;
     }
+    .section{
+        margin-left: 0rem;
+        margin-bottom: 5rem;
+    }
 }
 
 
@@ -367,5 +390,39 @@ span:hover {
 
     .navbar:hover .logo-text {
         left: 0px;
+    }
+
+    .col-2 {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: stretch;
+        align-content: space-evenly;
+        overflow: hidden;
+    }
+    
+    .col-2-item {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--text-secondary);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+
+    }
+    
+    .col-2-item p {
+        font-weight: lighter;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        overflow: hidden;
+        
+        
     }
 }

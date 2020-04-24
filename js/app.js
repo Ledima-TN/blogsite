@@ -1,6 +1,6 @@
 	  $(document).ready(function () {
   $('.main-header').lettering();
-
+  $('.split-text').lettering();
   $('a.toscroll').on('click', function (e) {
     var href = $(this).attr('href');
     e.preventDefault();
@@ -14,3 +14,5 @@
     return false;
   })
 })
+
+
