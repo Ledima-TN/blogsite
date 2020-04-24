@@ -1,27 +1,14 @@
 :root {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    --text-primary: whitesmoke;
-    --text-secondary: #ececec;
-    --bg-primary: #23232f;
-    --bg-secondary: #26262e;
- 
-    --transition-speed: 600ms;
-    --innerheight: 100vh;/* variable 100% of viewport height */
-    overflow-x: hidden;
-
-}
-
-:root {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    --text-primary: #17252A;
-    --text-secondary: #FEFFFF;
-    --bg-primary: #3AAFA9;
-    --bg-secondary: #2B7A78;
-    --icons-primary: #def2f1 ;
-    --icons-secondary: #BAB2B5;
-    --circles-primary: #2B7A78;
+    --text-primary: #184453ff;
+    --text-secondary: #f7f8ecff;
+    --bg-primary: #a69888;
+    --bg-secondary:  #230903;
+    --color1: #312b39ff;
+    --icons-primary: #f7f8ecff ;
+    --icons-secondary: #f7f8ecff;
+    --circles-primary: #f7f8ecff;
     --transition-speed: 600ms;
     --innerheight: 100vh;/* variable 100% of viewport height */
     overflow-x: hidden;
@@ -34,14 +21,15 @@
     padding-bottom: 5rem;
     width: 100vw;
     height: auto;
-    background: var(--bg-secondary);
     z-index: 5;
     color: var(--text-secondary);
     overflow-x: hidden;
+    overflow-y: hidden;
     
     text-overflow: clip;
+    transition: all 500ms ease;
 }   
- 
+
 body {
     color: var(--text-primary);
     margin: 0;
@@ -206,7 +194,7 @@ main {
     height: auto;
     max-width: 300px;
     width: 80vw;
-    transition: all 200ms ease;
+    transition: all 500ms ease;
     box-shadow: 0 0 0.75rem crimson;
 
 }
@@ -222,7 +210,13 @@ main {
     max-height: 479px;
     width: 80vw;
     padding-bottom: 2rem;
+    transition: all 500ms ease-in;
+
     
+}
+
+.profile-image:hover {
+    filter: brightness(120%) saturate(120%);
 }
 
 .rounded {
@@ -230,16 +224,6 @@ main {
 }
 
 .rounded:hover {
-    transform: scale(1.01);
-}
-
-img {
-    transition: all 200ms ease;
-}
-
-
-
-.profile-image:hover {
     transform: scale(1.01);
 }
 
@@ -287,7 +271,7 @@ span:hover {
 
 }
 
-.fa, .fa-glasses, .fa-gamepad, .fa-arrow-circle-down, .fa-home, .fa-vr-cardboard {
+.fa-glasses, .fa-gamepad, .fa-arrow-circle-down, .homee, .fa-vr-cardboard {
     font-size: 4rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
