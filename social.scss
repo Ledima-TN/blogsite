@@ -1,0 +1,76 @@
+//variables
+$basic-dark-color: #212121;
+$basic-light-color: #fff;
+$border-radius: 50%;
+$font-size: 25px;
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  
+.buttons{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+}
+  a {
+    flex-direction: row;
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    color: $basic-dark-color; //or change to your own color
+    border: 2px solid $basic-dark-color; //or change to your own color
+    
+    i {
+      position: relative;
+      z-index: 3;
+    }
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+    
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+/* thurio effect */
+
+.effect.thurio {
+  
+  a {
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+    
+    i {
+      transition: transform 0.01s linear 0s;
+      transform: rotate(-45deg);
+    }
+    
+    &:hover {
+      border-radius: 0px;
+    }
+  }
+}
+
