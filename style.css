@@ -154,12 +154,19 @@ nav ul li a:hover {
 main {
     display: flex;
     flex-direction: column;
+
     
 }
+
+h1, h2{
+
+word-wrap: break-word;
+} 
 
 .flex {
     display: flex;
     flex-direction: column;
+word-wrap: break-word;
 }
 
 .section {
