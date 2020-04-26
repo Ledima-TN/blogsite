@@ -15,9 +15,11 @@
     /* variable 100% of viewport height */
     font-display: initial;
     overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 
     word-wrap: break-word;
+    
 }
 
 nav,
@@ -152,18 +154,9 @@ nav ul li a:hover {
 
 
 main {
-    overflow: scroll;
     display: flex;
     flex-direction: column;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    
-
 }
-main div{
-scroll-snap-align: start;
-} 
 
 h1, h2{
 
@@ -173,16 +166,16 @@ word-wrap: break-word;
 .flex {
     display: flex;
     flex-direction: column;
-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .section {
     height: 100vh;
     width: 100vw;
     padding-bottom: 5rem;
-    flex-shrink: 0;
-    
+    flex-shrink: 0;    
 }
+
 
 .fullcenter {
     flex-direction: column;
@@ -221,15 +214,19 @@ span:hover {
 /*IMAGES*/
 
 .avatar {
-    width: 15rem;
-    height: 15rem;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 13rem;
+    height: 13rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) saturate(0%);
     transition: all 500ms ease;
+    padding: 1rem;
+    border-radius: 50%;
 
 }
 
 .avatar:hover {
     transform: scale(1.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) saturate(100%);
+
 }
 
 .gifs {
@@ -357,7 +354,6 @@ video {
     font-size: 58pt;
     color: var(--icons-primary);
 }
-
 
 
 
