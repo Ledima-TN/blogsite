@@ -161,6 +161,9 @@ main {
     
 
 }
+main div{
+scroll-snap-align: start;
+} 
 
 h1, h2{
 
@@ -178,7 +181,7 @@ word-wrap: break-word;
     width: 100vw;
     padding-bottom: 5rem;
     flex-shrink: 0;
-    scroll-snap-align: start;
+    
 }
 
 .fullcenter {
